@@ -13,6 +13,8 @@ function App() {
           placeholder="Ya has hecho tu custom hook?"
           value={text}
           onChange={(e) => setText(e.target.value)}
+          rows={5}
+          cols={25}
         />
       </div>
     </>
