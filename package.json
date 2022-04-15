@@ -2,7 +2,7 @@
   "name": "hook-local-storage",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://jimmyvergara03.github.io/hook-local-storage",
+  "homepage": "https://jimmyvergara03.github.io/hook-local-storage/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
