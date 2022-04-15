@@ -1,17 +1,8 @@
-import { useState } from "react";
+import React from "react";
+import useLocalStorage from "./hooks/useLocalStorage";
 
 function App() {
-  const [text, setText] = useState(JSON.parse(localStorage.getItem("V1")));
-
-  function setLocalStorge(event) {
-    const value = event.target.value;
-    try {
-      setText(value);
-      localStorage.setItem("V1", JSON.stringify(value));
-    } catch (error) {
-      console.error(error);
-    }
-  }
+  const { stored: text, setValue: setText } = useLocalStorage("text", "");
 
   return (
     <>
@@ -20,8 +11,8 @@ function App() {
           className="App__textarea"
           placeholder="Ya has hecho tu custom hook?"
           value={text}
-          onChange={setLocalStorge}
-        ></textarea>
+          onChange={(e) => setText(e.target.value)}
+        />
       </div>
     </>
   );
