@@ -1,42 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App__textarea {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(250, 250, 250, 0.4);
+  backdrop-filter: blur(20px);
+  border: solid 1px rgba(250, 250, 250, 0.5);
+  box-shadow: 1px 3px 10px 0px rgba(129, 129, 129, 0.482);
+  border-radius: 10px;
+  color: rgb(0, 52, 62);
+  font-weight: 100;
+  font-family: "Square Peg", cursive;
+  font-size: 25px;
+  outline: none;
+  resize: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
+.App__textarea:focus {
+  border: solid 1px rgb(24, 135, 141);
+  box-shadow: 1px 4px 10px 0px rgba(3, 128, 135, 0.482);
 }
